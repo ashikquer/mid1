@@ -1,0 +1,304 @@
+<!--1 HEADER-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THYNKShoes-Buy Your Shoes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-gray-800">
+                <a href="./homepage.html" class="hover:text-blue-500">THYNKShoes</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="relative w-full max-w-md mx-4">
+                <input type="text" class="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Search for products...">
+                <button class="absolute top-0 right-0 h-full px-4 bg-blue-500 text-white rounded-r-lg">Search</button>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-6 text-gray-600">
+                <a href="./homepage.html" class="hover:text-blue-500">Home</a>
+                <a href="#Products" class="hover:text-blue-500">Shop</a>
+                <a href="./about.html" class="hover:text-blue-500">About Us</a>
+                <a href="#" class="hover:text-blue-500">Contact</a>
+            </nav>
+
+            <!-- Icons: Cart & Profile -->
+            <div class="flex space-x-4 items-center">
+                <a href="#" class="text-gray-600 hover:text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l1-5H6.4m-3.4 0L5 7h14l1 5M7 13l-1 5h11.9a4 4 0 01-7.9 0H7z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 19.121A4.978 4.978 0 017 20a5 5 0 110-10 5 5 0 017 7.879M13 11V7a4 4 0 00-8 0v4m13 5v-3a4 4 0 10-8 0v3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!--2 Banner Section-->
+    <section id="Banner" class="bg-gray-100 py-12">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-col lg:flex-row items-center justify-between">
+            <!-- Banner Text -->
+            <div class="lg:w-1/2 text-center lg:text-left">
+              <h1 class="text-4xl font-bold text-gray-800 leading-tight mb-6">
+                Discover Our Latest Collection
+              </h1>
+              <p class="text-gray-600 mb-8">
+                Explore a wide range of new arrivals, perfect for your style.
+                Get exclusive deals and enjoy free shipping on orders over $50!
+              </p>
+              <a href="#" class="inline-block px-8 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300 ease-in-out">
+                Shop Now
+              </a>
+            </div>
+      
+            <!-- Banner Image -->
+            <div class="lg:w-1/2 mt-10 lg:mt-0">
+              <img
+                src="./photos/Banner.png"
+                alt="New Collection"
+                class="w-full rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--3 Products Section-->
+      <section id="Products" class="bg-white py-12">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Featured Products</h2>
+      
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            <!-- Product 1 -->
+            <div id="Products-01" class="bg-white shadow-lg rounded-lg p-6">
+              <img
+                src="./photos/Product-01.png"
+                alt="Product 1"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold text-gray-800">Product Name 1</h3>
+              <p class="text-gray-600 mt-2">$49.99</p>
+              <a href="#" class="block mt-4 px-4 py-2 bg-blue-500 text-white text-center rounded hover:bg-blue-600">Add to Cart</a>
+            </div>
+      
+            <!-- Product 2 -->
+            <div id="Products-02" class="bg-white shadow-lg rounded-lg p-6">
+              <img
+                src="./photos/Product-02.png"
+                alt="Product 2"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold text-gray-800">Product Name 2</h3>
+              <p class="text-gray-600 mt-2">$59.99</p>
+              <a href="#" class="block mt-4 px-4 py-2 bg-blue-500 text-white text-center rounded hover:bg-blue-600">Add to Cart</a>
+            </div>
+      
+            <!-- Product 3 -->
+            <div id="Products-03" class="bg-white shadow-lg rounded-lg p-6">
+              <img
+                src="./photos/Product-03.png"
+                alt="Product 3"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold text-gray-800">Product Name 3</h3>
+              <p class="text-gray-600 mt-2">$69.99</p>
+              <a href="#" class="block mt-4 px-4 py-2 bg-blue-500 text-white text-center rounded hover:bg-blue-600">Add to Cart</a>
+            </div>
+      
+            <!-- Product 4 -->
+            <div id="Products-04" class="bg-white shadow-lg rounded-lg p-6">
+              <img
+                src="./photos/Product-04.png"
+                alt="Product 4"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold text-gray-800">Product Name 4</h3>
+              <p class="text-gray-600 mt-2">$79.99</p>
+              <a href="#" class="block mt-4 px-4 py-2 bg-blue-500 text-white text-center rounded hover:bg-blue-600">Add to Cart</a>
+            </div>
+      
+            <!-- Product 5 -->
+            <div id="Products-05" class="bg-white shadow-lg rounded-lg p-6">
+              <img
+                src="./photos/Product-05.png"
+                alt="Product 5"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold text-gray-800">Product Name 5</h3>
+              <p class="text-gray-600 mt-2">$89.99</p>
+              <a href="#" class="block mt-4 px-4 py-2 bg-blue-500 text-white text-center rounded hover:bg-blue-600">Add to Cart</a>
+            </div>
+      
+            <!-- Product 6 -->
+            <div id="Products-06" class="bg-white shadow-lg rounded-lg p-6">
+              <img
+                src="./photos/Product-06.png"
+                alt="Product 6"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold text-gray-800">Product Name 6</h3>
+              <p class="text-gray-600 mt-2">$99.99</p>
+              <a href="#" class="block mt-4 px-4 py-2 bg-blue-500 text-white text-center rounded hover:bg-blue-600">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--4 About Us Section-->
+      <section id="about-us" class="bg-gray-100 py-12">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-col lg:flex-row items-center justify-between">
+            <!-- Text Section -->
+            <div class="lg:w-1/2">
+              <h2 class="text-4xl font-bold text-gray-800 mb-6">About Us</h2>
+              <p class="text-gray-600 mb-4">
+                Welcome to our store! We are passionate about providing the best products to our customers. Our collection is carefully curated to bring you the latest trends and high-quality items. We believe in great value, exceptional customer service, and building a community of satisfied shoppers.
+              </p>
+              <p class="text-gray-600">
+                With years of experience in the industry, our mission is to make your shopping experience enjoyable and seamless. Whether you're looking for something specific or just browsing, we've got something for everyone!
+              </p>
+            </div>
+      
+            <!-- Image Section -->
+            <div class="relative lg:w-1/2 mt-10 lg:mt-0">
+              <!-- Large Image -->
+              <img
+                src="./photos/about-02.png"
+                alt="About Us Image"
+                class="w-full h-auto rounded-lg shadow-lg"
+              />
+              <!-- Overlay Image -->
+              <img
+                src="./photos/about-01.png"
+                alt="Overlay Image"
+                class="absolute top-0 right-0 transform translate-x-12 -translate-y-12 w-2/3 h-auto rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--5 Newsletter Section-->
+      <section id="Newletter" class="bg-blue-500 py-12">
+        <div class="container mx-auto px-6 text-white">
+          <div class="flex flex-col items-center justify-center text-center">
+            <h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+            <p class="text-lg mb-8">
+              Stay updated with our latest products, exclusive offers, and more!
+            </p>
+      
+            <!-- Newsletter Form -->
+            <div class="w-full md:w-2/3 lg:w-1/2">
+              <form class="flex flex-col sm:flex-row items-center justify-center">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="w-full sm:w-auto flex-grow py-3 px-4 mb-4 sm:mb-0 sm:mr-4 text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="w-full sm:w-auto py-3 px-8 bg-white text-blue-500 font-semibold rounded-lg hover:bg-gray-100 transition duration-300"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+<!--6 Footer Section-->
+<footer id="Footer" class="bg-gray-800 py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-gray-400">
+        <!-- About Us Section -->
+        <div>
+          <h3 class="text-white text-xl font-semibold mb-4">About Us</h3>
+          <p class="mb-4">
+            We offer a wide selection of high-quality products at competitive prices. Our goal is to provide an excellent shopping experience for every customer.
+          </p>
+          <a href="#" class="text-blue-500 hover:text-blue-400">Learn More &rarr;</a>
+        </div>
+  
+        <!-- Customer Service Section -->
+        <div>
+          <h3 class="text-white text-xl font-semibold mb-4">Customer Service</h3>
+          <ul>
+            <li class="mb-2">
+              <a href="#" class="hover:text-white">Help & FAQs</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="hover:text-white">Shipping & Delivery</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="hover:text-white">Returns & Exchanges</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="hover:text-white">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Newsletter Section -->
+        <div>
+          <h3 class="text-white text-xl font-semibold mb-4">Newsletter</h3>
+          <p class="mb-4">
+            Subscribe to get the latest updates, promotions, and discounts.
+          </p>
+          <form class="flex items-center">
+            <input
+              type="email"
+              placeholder="Your email"
+              class="w-full py-2 px-4 text-gray-800 rounded-l-lg focus:outline-none"
+            />
+            <button
+              type="submit"
+              class="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600 transition duration-300"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+  
+        <!-- Follow Us Section -->
+        <div>
+          <h3 class="text-white text-xl font-semibold mb-4">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.723-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.719 0-4.923 2.205-4.923 4.922 0 .386.043.763.127 1.125C7.691 8.094 4.066 6.13 1.64 3.161c-.423.725-.666 1.562-.666 2.458 0 1.695.863 3.192 2.175 4.069-.802-.025-1.557-.246-2.216-.615v.062c0 2.366 1.684 4.342 3.918 4.785-.41.112-.843.171-1.287.171-.314 0-.615-.03-.916-.086.617 1.926 2.406 3.325 4.526 3.363-1.66 1.302-3.757 2.078-6.04 2.078-.393 0-.779-.023-1.16-.068 2.151 1.379 4.71 2.184 7.457 2.184 8.946 0 13.841-7.411 13.841-13.84 0-.211-.005-.423-.014-.633.95-.685 1.774-1.54 2.428-2.513z"></path>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-1.352-.054-4.61-.078-6.849-.078-2.246 0-5.504.024-6.857.078-1.35.054-2.667.774-3.46 2.011-.631 1.062-.842 2.271-.891 3.556-.054 1.352-.078 4.61-.078 6.85s.024 5.498.078 6.851c.054 1.35.774 2.667 2.011 3.46 1.062.631 2.271.842 3.556.891 1.352.054 4.61.078 6.849.078s5.504-.024 6.857-.078c1.35-.054 2.667-.774 3.46-2.011.631-1.062.842-2.271.891-3.556.054-1.352.078-4.61.078-6.85s-.024-5.498-.078-6.851c-.054-1.35-.774-2.667-2.011-3.46-1.062-.631-2.271-.842-3.556-.891zm-7.615 14.545v-9.458l8.108 4.73-8.108 4.728z"></path>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M12 2.163c-5.424 0-9.837 4.412-9.837 9.837 0 5.424 4.412 9.837 9.837 9.837s9.837-4.412 9.837-9.837c0-5.425-4.413-9.837-9.837-9.837zm-.013 15.328h-2.202v-7.636h2.202v7.636zm-1.101-8.752c-.706 0-1.278-.572-1.278-1.278s.572-1.278 1.278-1.278 1.278.572 1.278 1.278-.572 1.278-1.278 1.278zm9.041 8.752h-2.202v-3.791c0-.907-.016-2.073-1.26-2.073-1.262 0-1.455 1.015-1.455 2.005v3.859h-2.201v-7.636h2.113v1.044h.029c.294-.557.988-1.141 2.034-1.141 2.176 0 2.578 1.432 2.578 3.295v4.438z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Footer Bottom -->
+      <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+        <p>&copy; 2024 THYNKShoes. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+<script src="./js/homepage.js"></script>
+
+</body>
+</html>
